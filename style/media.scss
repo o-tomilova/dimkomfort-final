@@ -56,6 +56,14 @@ $padding-large: 100px;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1024px) {
 
+.gallery {
+	.block-content {
+    	padding-top: $padding-small;
+	}
+}
+
+
+
 .menu {
 	div {
 		a {
@@ -89,14 +97,27 @@ $padding-large: 100px;
 
 .serv-list {
 	width: 100%;
-	.sl-left, .sl-right {
-	}
+}
 
+.sl-container {
+    margin-bottom: 30px;
+    padding-left: 25px;
+    .sl-img {
+    	width: 20%;
+   	}
+   	.sl-text {
+    	width: 70%;
+	}
 }
 
 .serv-img { 
 	display: none;
 }
+
+.cat-overlay h3 {
+    font-size: 15px;
+}
+
 
 // ---------------- OTHER PAGES ------------------
 
@@ -186,7 +207,9 @@ h2 {
 }
 
 .footer-container {
-	width: 84%;
+	width: 76%;
+	margin-left: 12%;
+	margin-right: 12%;
 
 	ul {
 		margin: 0;
@@ -292,14 +315,35 @@ h2 {
     width: 46%;
 }
 
+// .similar_articles {
+// 	.catalog-container {
+// 		.articles-item:last-child {
+// 			display: none;
+// 		}
+// 	}
+// }
+
+
 .articles-list h2 {
     width: 100%;
     text-align: center;
 }
 
+#tags-cloud {
+   	text-align: center;
+}
+
+
 .page-navigation {
     width: 100%;
     margin-top: 10px; 
+    text-align: center;
+}
+
+.page-navigation-bottom { 
+	.page-navigation {
+		text-align: center;
+	}
 }
 
 .contact-info {
@@ -307,9 +351,6 @@ h2 {
 }
 
 .contact-info-title {
-	text-align: center;
-}
-.contact-info-column {
 	text-align: center;
 }
 
@@ -322,6 +363,16 @@ h2 {
     }
 }
 
+.price-table-wrap {
+	button {
+	    padding: 0 6px;
+	}
+}
+
+.table-order {
+	margin-bottom: 10px;
+}
+
 .about-content {
 	font-size: 14px;
 	h3 {
@@ -329,6 +380,14 @@ h2 {
 	}
 }
 
+.contact-info-column {
+	width: 38%;
+	margin: 0 6%;
+}
+
+.google-map {
+    height: 350px;
+}
 
 }
 
@@ -358,11 +417,22 @@ h2 {
 	text-align: center;
 }
 
+.currencies {
+	div {
+		border: none;
+	}
+}
+
 .search-form {
 	input.search-submit {
 		font-size: 14px;
 	}
 }
+
+.about-container h2 {
+    margin-top: 20px;
+}
+
 
 .cat-overlay{
  	h3 {
@@ -372,24 +442,11 @@ h2 {
     }
 }
 
-.promo-item {
-	p {
-    	font-size: 14px;
-	}
-}
-
-.sl-text {
-	p {
-    	font-size: 13px;
-	}
-}
-
 .seo-item{
  	p {
     	font-size: 14px;
 	}
 }
-
 
 .fc-img {
     width: 40%;
@@ -460,8 +517,11 @@ h2 {
 }
 
 .nl-logo {
-    width: 30%;
+    width: 100px;
+    margin: 0% 4%;
 }
+
+
 
 .nl-phones {
 	a {
@@ -549,6 +609,9 @@ h2 {
 
 .fc-img {
     width: 50%;
+    img {
+		width: 40%;
+    }
 }
 
 .fc-text {
@@ -573,10 +636,7 @@ h2 {
 }
 
 .footer-container-3 {
-	ul {
-		text-align: left;
-		margin-left: 40px;
-	}
+	display: none;
 }
 
 .footer-container-1 {
@@ -594,6 +654,19 @@ h2 {
 	padding-top: $padding-small;
 	padding-bottom: 20px;
 }
+
+.promo-item {
+	img {
+    	width: 25%;
+	}
+	p {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+}
+
+
 
 .promo-bottom {
 	padding-top: $padding-small;
@@ -630,6 +703,11 @@ h2 {
 .contact-info-column {
     width: 94%;
     margin-bottom: 0;
+    text-align: left;
+} 
+
+.google-map {
+    height: 250px;
 }
 
 
